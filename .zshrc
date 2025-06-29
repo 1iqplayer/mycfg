@@ -111,4 +111,4 @@ SAVEHIST=1000
 source ~/.completion
 
 alias ip="ip -c"
-export PATH=$PATH:/home/neo/bin
+export PATH=$PATH:$HOME/neo/bin
