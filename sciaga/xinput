@@ -1,0 +1,3 @@
+xinput list #show xinput devices
+xinput list-props <id> #show props of <id> device
+xinput set-prop <id> "<prop>" <value> #set prop of <id> device
