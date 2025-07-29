@@ -1,3 +1,4 @@
-sudo nmap -T4 -F 192.168.1.142 		#-F = Fast mode (only scans 100 common ports) -T4 = faster timing (aggressive but not unstable)
-sudo nmap -T4 -p- 192.168.1.123		#-p- = scan all ports (1-65535) 
-sudo nmap -T4 -sS -sV 192.168.1.123	#-sS = TCP SYN scan (fast and stealthy) -sV = detect service verssudo nmap -sU --top-ports 20 192.168.1.123	#Quick UDP Scan (Much Slower Than TCP)
+sudo nmap -T4 -F		#-F = Fast mode (only scans 100 common ports) -T4 = faster timing (aggressive but not unstable)
+sudo nmap -T4 -p- 		#-p- = scan all ports (1-65535) 
+sudo nmap -T4 -sS -sV 		#-sS = TCP SYN scan (fast and stealthy) -sV = detect service version
+sudo nmap -sU --top-ports 20	#Quick UDP Scan (Much Slower Than TCP)
