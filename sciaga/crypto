@@ -1,0 +1,3 @@
+shred -u filename		#delete file securely
+gpg --symetric <file>		#encrypt file using passphrase
+gpg --output filename.dec --decrypt filename.gpg #decrypt file using passphrase
