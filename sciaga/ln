@@ -1,0 +1,10 @@
+Flag	Description
+-s	Create a symbolic (soft) link instead of a hard link
+-f	Force overwrite: remove existing destination file without prompting
+-n	No dereference: treat destination that is a symlink as a file, not its target
+-v	Verbose: show what is being done (helpful for debugging/scripting)
+-T	Treat destination as a regular file, even if it exists as a directory
+-r	Create relative symlink (not in all versions of ln, e.g., GNU only)
+-b	Make backup of each file that would be overwritten
+--backup[=METHOD]	Use with -b to specify backup method (e.g. simple, numbered)
+--target-directory=DIR	Put the symlink into a specific directory instead of using full destination
