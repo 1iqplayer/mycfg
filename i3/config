@@ -198,4 +198,5 @@ gaps outer 4
 smart_gaps on
 smart_borders on
 
+exec xinput set-prop 11 277 1
 exec_always xinput set-prop 11 277 1
