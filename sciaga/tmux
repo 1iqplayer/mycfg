@@ -1,0 +1,18 @@
+prefix+[	#enter copy mode
+prefix+]	#paste from tmux buffer
+
+# Use vi keys in copy mode
+setw -g mode-keys vi
+
+# Copy selection to system clipboard (Wayland)
+bind-key -T copy-mode-vi y send-keys -X copy-pipe-and-cancel "wl-copy"
+
+# For X11 (optional)
+# bind-key -T copy-mode-vi y send-keys -X copy-pipe-and-cancel "xclip -selection clipboard -in"
+
+
+       ~/.tmux.conf
+       $XDG_CONFIG_HOME/tmux/tmux.conf
+       ~/.config/tmux/tmux.conf
+                          Default tmux configuration file.
+       /etc/tmux.conf     System-wide configuration file.

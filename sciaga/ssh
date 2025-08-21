@@ -1,1 +1,7 @@
-ssh-keygen -t ed25519 -C "uchihaolek@gmail.com" 
+ssh-keygen -t ed25519 -C "uchihaolek@gmail.com" #genereate ssh key with mail in it
+
+correct permissions:
+chmod 600 ~/.ssh/id_rsa
+chmod 644 ~/.ssh/id_rsa.pub
+chmod 700 ~/.ssh
+

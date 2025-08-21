@@ -1,0 +1,84 @@
+:!<command> #execute linux command
+Here’s a concise cheat sheet for **Neovim (nvim)**:
+
+---
+
+### **Modes**
+
+* `Normal` – navigate, delete, yank, etc. (default)
+* `Insert` – type text (`i`, `I`, `a`, `A`, `o`, `O`)
+* `Visual` – select text (`v`, `V`, `Ctrl+v`)
+* `Command-line` – enter commands (`:`)
+
+---
+
+### **Movement**
+
+* `h` left, `j` down, `k` up, `l` right
+* `w` next word, `b` back word, `e` end of word
+* `0` start of line, `^` first non-blank, `$` end of line
+* `gg` top of file, `G` bottom of file
+* `{` previous paragraph, `}` next paragraph
+* `Ctrl+f` page down, `Ctrl+b` page up
+
+---
+
+### **Editing**
+
+* `x` delete char, `dd` delete line, `D` delete to end of line
+* `yy` yank line, `p` paste after, `P` paste before
+* `u` undo, `Ctrl+r` redo
+* `r<char>` replace one char
+* `~` toggle case
+
+---
+
+### **Visual Mode**
+
+* `v` select chars, `V` select lines, `Ctrl+v` select block
+* `y` yank selection, `d` delete selection, `>` indent, `<` unindent
+
+---
+
+### **Search & Replace**
+
+* `/pattern` search forward, `?pattern` search backward
+* `n` next match, `N` previous match
+* `:%s/old/new/g` replace all
+
+---
+
+### **Windows & Tabs**
+
+* `:split` or `:sp` horizontal split
+* `:vsplit` or `:vsp` vertical split
+* `Ctrl+w h/j/k/l` move between splits
+* `:tabnew` new tab, `:tabnext` next tab, `:tabprev` previous tab
+
+---
+
+### **Files**
+
+* `:w` save, `:q` quit, `:wq` save & quit, `:q!` quit without saving
+* `:e filename` open file, `:bnext` / `:bprev` buffer switch
+
+---
+
+### **Clipboard**
+
+* `"+y` copy to system clipboard
+* `"+p` paste from system clipboard
+
+---
+
+### **Misc**
+
+* `.` repeat last action
+* `:set number` show line numbers
+* `:set relativenumber` relative line numbers
+* `:help <command>` get help
+
+---
+
+If you want, I can make an **ultra-compact one-page version** with only the most essential commands you’ll use daily. Do you want me to do that?
+
