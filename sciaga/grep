@@ -1,0 +1,23 @@
+-i → case-insensitive search
+
+-r / -R → recursive search in directories (-R follows symlinks too)
+
+-n → show line numbers of matches
+
+-H / -h → show filename (-H) or suppress filename (-h) in output
+
+-l / -L → print only names of files with (-l) or without (-L) matches
+
+-c → count matches instead of printing them
+
+-v → invert match (show non-matching lines)
+
+-o → print only the matching part of the line
+
+-w → match whole words only
+
+-A NUM / -B NUM / -C NUM → show context: after / before / both around matches
+
+-E → extended regex (like egrep)
+
+-F → fixed strings (like fgrep, no regex, faster)
