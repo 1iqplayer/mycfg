@@ -21,3 +21,7 @@
 -E → extended regex (like egrep)
 
 -F → fixed strings (like fgrep, no regex, faster)
+
+grep -E "cat|dog" file.txt
+grep "cat\|dog" file.txt
+

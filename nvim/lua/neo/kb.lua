@@ -46,3 +46,8 @@ map('n', '<F6>', ':lua require"dap".step_over()<CR>')
 map('n', '<F7>', ':lua require"dap".step_into()<CR>')
 map('n', '<F8>', ':lua require"dap".step_out()<CR>')
 map('n', '<leader>v', ':lua require"dap".toggle_breakpoint()<CR>')
+
+-- Use Ctrl+C in visual mode to copy to system clipboard
+vim.api.nvim_set_keymap('v', '<C-c>', '"+y', { noremap = true, silent = true })
+map('v', '<C-c', '"+y')
+
