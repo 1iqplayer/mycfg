@@ -1,0 +1,13 @@
+Change owner only (keep group as is):
+
+sudo chown -R username /var/www
+
+
+Change owner and group:
+
+sudo chown -R username:groupname /var/www
+
+
+Change only group recursively:
+
+sudo chown -R :groupname /var/www
