@@ -1,0 +1,60 @@
+1. Hello World
+docker run hello-world
+run → create and start a container.
+No extra flags needed here. It just prints a test message and exits.
+---
+2. Alpine Linux
+docker run -it --rm alpine sh
+-i → interactive (keeps STDIN open).
+-t → allocate a pseudo-TTY (gives you a proper shell).
+--rm → remove container automatically when it exits (good for testing).
+alpine → the image name.
+sh → command to run inside (shell).
+👉 You now have a tiny Linux shell to play with.
+---
+3. Nginx Web Server
+docker run -d -p 8080:80 --name mynginx nginx
+-d → detached mode (runs in background).
+-p 8080:80 → maps local port 8080 → container port 80.
+--name mynginx → gives the container a custom name (instead of random).
+nginx → the image.
+👉 Visit http://localhost:8080 to see it running.
+---
+4. Redis (in-memory database)
+docker run -d -p 6379:6379 --name myredis redis
+-d → detached, runs in background.
+-p 6379:6379 → maps Redis default port.
+--name myredis → easy to reference by name.
+👉 To connect:
+docker exec -it myredis redis-cli
+exec → run a command inside a running container.
+-it → interactive terminal.
+---
+5. Portainer (Docker GUI)
+docker run -d -p 9000:9000 --name portainer \
+--restart=always \
+-v /var/run/docker.sock:/var/run/docker.sock \
+-v portainer_data:/data \
+portainer/portainer-ce
+--restart=always → restart container if it crashes or system reboots.
+-v /var/run/docker.sock:/var/run/docker.sock → lets Portainer talk to Docker engine.
+-v portainer_data:/data → named volume for persistent data.
+portainer/portainer-ce → image.
+👉 Visit http://localhost:9000
+---
+⚡ Other Useful Flags (Super Handy)
+--rm → auto-remove container after it exits (good for temporary stuff).
+--name <name> → give the container a nice name.
+-v hostpath:containerpath → mount volumes (host ↔ container storage).
+-e KEY=value → set environment variables (used in apps & databases).
+--network <net> → attach to a custom Docker network.
+--restart=always → auto-restart on crash or reboot.
+-it → for interactive containers (shells, REPLs).
+-d → detached background mode.
+docker container ls -a -> ls even sxited containers
+👉 Suggested Learning Path:
+1. Use alpine with -it --rm.
+2. Run nginx with -d -p --name.
+3. Add volumes (-v) to persist data.
+4. Try environment variables with something like mysql or postgres.
+5. Play with networks by linking two containers (e.g., app ↔ db).
