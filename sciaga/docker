@@ -51,7 +51,10 @@ portainer/portainer-ce → image.
 --restart=always → auto-restart on crash or reboot.
 -it → for interactive containers (shells, REPLs).
 -d → detached background mode.
-docker container ls -a -> ls even sxited containers
+docker container prune -f # REMOVE EXITED CONTAINERS #
+docker container ls -a -> # LIST EVEN EXITED CONTAINERS #
+docker ps -a --filter "status=exited" --size # SHOW HOW MUCH DISK SPACE CONTAINERS OCCUPY, FILTERED FOR EXITED ONES #
+docker stats # SHOWS LIVE MEMORY/CPU USAGE FOR RUNNING CONTAINERS #
 👉 Suggested Learning Path:
 1. Use alpine with -it --rm.
 2. Run nginx with -d -p --name.

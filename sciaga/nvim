@@ -24,6 +24,7 @@
 ### **Visual Mode**
 * `v` select chars, `V` select lines, `Ctrl+v` select block
 * `y` yank selection, `d` delete selection, `>` indent, `<` unindent
+* U - Make all selected letters uppercase
 ---
 ### **Search & Replace**
 * `/pattern` search forward, `?pattern` search backward
